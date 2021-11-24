@@ -1,0 +1,71 @@
+
+body{
+	background: linear-gradient(90deg,  #6882f0, #1f379d);
+	/* background-repeat: no-repeat;
+	background-size:contain; */
+	/* background-color: #4b87c0; */
+}
+
+.content{
+
+	border-radius: 2rem;
+	margin-top:20%;
+	margin-bottom: 8%;
+	margin-left: 8%;
+	margin-right: 8%;
+	background-color: #ffffff;
+	padding: 1rem 1rem 1rem 1rem;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1) ;
+}
+
+.pic{
+	padding: 4rem 4rem 4rem	4rem;
+}
+
+.signin-text{
+	margin-top: 1.5rem;
+	padding-top: 4rem ;
+	/* align-self: center; */
+	font-size: 2rem;
+	font-family: 'Comfortaa';
+	color: #dc3545;
+}
+
+.form-control{
+	/* display: block; */
+	margin-left: 7%;
+	width: 85%;
+	font-size: 0.5rem;
+	font-weight: 40;
+	/* line-height: 1.5; */
+	/* border-color: #1868b3; */
+	border-width: 1px 1px 1px 1px;
+	/* padding-left: 25%; */
+	color:#82817F;
+	/* height: 20%; */
+	border-radius: 0.3rem;
+	font-size: 1.2rem;
+	background-color: #D9D9D9;
+	/* background-clip: padding-box; */
+
+	/* position: relative;
+	left:10%;
+	background-color: #D9D9D9;
+	height: 10%;
+  border-radius: 0.3rem;
+	border: 0px;
+	padding-left: 5%;
+	color: #82817F;
+	font-size: 1rem;
+	width: 70% */
+
+}
+
+.btn-class{
+	width: 50%;
+	background-color: #1f379dff;
+	border-radius: 0.6rem;
+	color: #ffffff;
+	font-size: 1.5rem;
+	border: 0px;
+}

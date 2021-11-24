@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <title> Create</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="assets/css/create.css">
+
+    </head>
+
+    <body >
+    <!-- Navbar Image and text -->
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo/iiitb_logo.jpeg" width="55" height="45" class="d-inline-block align-top" alt="">
+            <label class="acad"><b>Academia</b></label>
+        </a>
+        <form class="form-inline">
+            <button class="btn btn-outline-success b1" type="button" id="create">Create</button>
+            <!-- <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button> -->
+            <button class="btn btn-outline-success b2" type="button" id="search">Search</button>
+            <button class="btn btn-outline-success b2" type="button" id="update">Update</button>
+            <button class="btn btn-outline-success b2" type="button" id="delete">Delete</button>
+            <button class="btn btn-outline-success b2" type="button" id="logout">Logout</button>
+        </form>
+    </nav>
+
+
+    <!-- Form  Starts here     -->
+    <div class="alert alert-success" id="alert" style="display: none">
+
+    </div>
+    <div class="alert alert-danger" id="danger" style="display: none">
+    Failed to Generate Bill
+    </div>
+    <div class="container Domain form1">
+
+
+        <!-- dropdown -->
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="Domain">
+                Domain
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item"  id="domain" href="#">Domain</a>
+                <a class="dropdown-item" id ="student" href="#">Student</a>
+
+            </div>
+        </div>
+
+
+        <!-- label and input start here -->
+
+        <div class="content text-center">
+            <div class="row mt-3">
+
+                <div class="col-md-6 mb-3 desc_lab">
+                    <label class="dscp" > Description</label>
+                </div>
+                <div class="col-md-6 inp" >
+                    <input class="txt desc" id="desc_t" placeholder="Description" >
+                </div>
+
+            </div>
+
+            <div class="row mt-3 ">
+
+                <div class="col-md-6 mb-3 labl">
+                    <label id="toggle_l"> Domain</label>
+                </div>
+                <div class="col-md-6 text-center inp" id="rollno-div">
+                    <input class="txt " id="rollno" placeholder=" Roll No">
+                </div>
+                <div class="col-md-6 text-center inp" id="select-div">
+                    <select id="domainid" class="txt-select"></select>
+                </div>
+
+            </div>
+            <div class="row mt-2 ">
+
+                <div class="col-md-6 mb-3 labl">
+                    <label > Amount</label>
+                </div>
+                <div class="col-md-6 text-center inp" >
+                    <input class="txt" type="number" id="amount" placeholder=" Amount">
+                </div>
+
+            </div>
+            <div class="row mt-2 ">
+
+                <div class="col-md-6 mb-3 labl">
+                    <label > Deadline</label>
+                </div>
+                <div class="col-md-6 text-center inp">
+                    <input type="date"class="txt" id = "deadline" >
+                </div>
+
+            </div>
+
+
+            <div class="row ">
+
+                <div class="col-md-12 mb-3 " style=" padding-left: 10%">
+                    <Button class="btn-submit" id="submit"> Submit</Button><button class="btn-cancel" id="reset"> Reset</button>
+
+                </div>
+                <!-- <div class="col-md-6 mb-3 labl">
+                    <Button> Logout</Button>
+                </div> -->
+                <div class="col-md-6 text-center">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    </body>
+    <script src="assets/js/poper.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/academia.js"></script>
+    <script src = "assets/js/create.js"></script>
+</html>

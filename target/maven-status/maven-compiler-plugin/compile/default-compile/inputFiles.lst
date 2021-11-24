@@ -1,0 +1,17 @@
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/JSON/UpdateDeadline.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/dao/implementation/DaoImplementation.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/bean/Student_Bills.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/bean/Student_Payment.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/bean/Bills.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/bean/Domain.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/bean/Employee.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/JSON/UpdateAmount.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/JSON/CreateBill.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/service/Service.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/dao/Dao.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/utils/SessionUtil.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/JSON/UpdateDescription.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/JSON/BillId.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/controller/Controller.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/JSON/ViewBill.java
+/home/marinex/IdeaProjects/academia/src/main/java/com/example/academia/bean/Student.java

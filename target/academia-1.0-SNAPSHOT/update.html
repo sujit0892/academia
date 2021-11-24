@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <title> Update</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="assets/css/academia.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/update.css">
+
+    </head>
+
+    <body >
+    <!-- Navbar Image and text -->
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo/iiitb_logo.jpeg" width="55" height="45" class="d-inline-block align-top" alt="">
+            <label class="acad"><b>Academia</b></label>
+        </a>
+        <form class="form-inline">
+            <button class="btn btn-outline-success b2" type="button" id="create">Create</button>
+            <!-- <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button> -->
+            <button class="btn btn-outline-success b2" type="button" id="search">Search</button>
+            <button class="btn btn-outline-success b1" type="button" id="update">Update</button>
+            <button class="btn btn-outline-success b2" type="button" id="delete">Delete</button>
+            <button class="btn btn-outline-success b2" type="button" id="logout">Logout</button>
+        </form>
+    </nav>
+
+    <div class="alert alert-danger" id="danger" style="display: none">
+        Fail to update
+    </div>
+
+    <div id="modalid" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h1 id="h-billid">Bill id:20</h1>
+            <label id="label">Deadline</label>
+            <input type="txt" placeholder="Enter description" id="update-txt" class="txt">
+            <input type="Number" placeholder="Enter amount" id="amt-txt" class="txt">
+            <input type="date" id="update-calender" class="txt" placeholder="DD/MM/YYYY">
+           <div><button class="bt btn-class" id="updateBill">Update</button><button class="bt btn-class" id="cancelB">Cancel</button>
+           </div>
+
+        </div>
+
+    </div>
+    <div class="view-div">
+        <div class="search-div"><input type="text" id="search-text", placeholder="Search"></div>
+        <div id="table-holder">
+            <table id="table">
+
+            </table>
+        </div>
+        <br>
+
+    </div>
+
+
+
+    </body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/academia.js"></script>
+    <script src="assets/js/update.js"></script>
+</html>

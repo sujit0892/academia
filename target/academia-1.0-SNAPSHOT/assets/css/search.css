@@ -1,0 +1,67 @@
+.view-div{
+  position: absolute;
+  background-color: red;
+  height: 75%;
+  width: 85%;
+  border-radius: 1rem;
+	margin-top:3%;
+	margin-left:7%;
+	background-color: #ffffff;
+	padding: 0rem 0rem 0rem 0rem;
+}
+
+#search-text
+{
+    
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+
+}
+
+.search-div
+{
+    padding: 1rem;  
+}
+
+#table-holder{
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 75%;
+    width: 100%;
+    horizon: scroll;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid #ddd;
+    font-size: 15px;
+    
+}
+
+#table th, #table td {
+    text-align: center;
+    padding: 12px;
+    
+}
+
+#table tr {
+    border-bottom: 3px solid #ddd;
+    
+}
+
+#table tr.header, #table tr:hover {
+    background-color: #f1f1f1;
+    
+}
+
+#status
+{
+    border: none;
+    background-color: #f1f1f1;
+}
