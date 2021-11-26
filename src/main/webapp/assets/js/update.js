@@ -84,7 +84,7 @@ function createTable(data)
     for(let i=0;i<data.length;i++)
     {
         if(!data[i]['status'])
-        val+= "<tr id='"+data[i]['bill']['id']+"'><td>"+data[i]['bill']['id']+"</td><td>"+data[i]['roll_number']+"</td><td onclick='updateDesc("+data[i]['bill']['id']+")'>"+data[i]['bill']['description']+"</td><td onclick='updateAmt("+data[i]['bill']['id']+")'>"+
+        val+= "<tr id='"+data[i]['bill']['id']+"'><td>"+data[i]['bill']['id']+"</td><td>"+data[i]['roll_number']+"</td><td class='descField' onclick='updateDesc("+data[i]['bill']['id']+")'>"+data[i]['bill']['description']+"</td><td onclick='updateAmt("+data[i]['bill']['id']+")'>"+
             data[i]['bill']['amount']+"</td><td>"+new Date(data[i]['bill']['bill_date']).toDateString()+"</td><td onclick='updateDeadline("+data[i]['bill']['id']+")'>"+new Date(data[i]['bill']['deadline']).toDateString()+"</td></tr>" ;
 
 

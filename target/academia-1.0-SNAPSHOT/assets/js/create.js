@@ -1,7 +1,7 @@
 document.getElementById("domain").addEventListener("click",setDomain);
 document.getElementById("student").addEventListener("click",setStudent);
 document.getElementById("reset").addEventListener("click",reset);
-document.getElementById("submit").addEventListener("click",submit);
+document.getElementById("submit").addEventListener("click",submitForm);
 
 
 var domain_id= document.getElementById("domainid");
@@ -32,6 +32,14 @@ document.getElementById("danger").style.display="None";
 
 
 getDomain();
+
+function submitForm()
+{
+    if(document.getElementById("formID").reportValidity()){
+        submit();
+    }
+}
+
 async function getDomain()
 {
     let response = await fetch('api/academia/getDomain', {
@@ -159,9 +167,9 @@ async function submit()
             document.getElementById("alert").innerHTML="<strong>Bill Generated! bill </strong>";
     }else{
         if(document.getElementById("dropdownMenuButton").value==="Domain")
-            document.getElementById("danger").innerHTML = "No student in this domain";
+            document.getElementById("danger").innerHTML = "Wrong Input";
         else
-            document.getElementById("danger").innerHTML = "Roll no dont exist";
+            document.getElementById("danger").innerHTML = "Wrong Input";
         document.getElementById("submit").disabled = false;
         document.getElementById("submit").style.opacity = 1.0;
         document.getElementById("alert").style.display="None";

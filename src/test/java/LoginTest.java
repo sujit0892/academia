@@ -174,12 +174,8 @@ public class LoginTest {
     @Test
     public void LoginTestCase5()
     {
-        System.setProperty("webdriver.chrome.driver", "/home/marinex/Test/chromedriver");
-        driver = new ChromeDriver();
 
 
-
-        driver.get("http://127.0.0.1:8080/academia_war_exploded/login.html");
         WebStorage webStorage = (WebStorage) new Augmenter().augment(driver);
         SessionStorage storage = webStorage.getSessionStorage();
         storage.setItem("id","101");

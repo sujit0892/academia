@@ -58,13 +58,14 @@
         <!-- label and input start here -->
 
         <div class="content text-center">
+            <form id = "formID">
             <div class="row mt-3">
 
                 <div class="col-md-6 mb-3 desc_lab">
                     <label class="dscp" > Description</label>
                 </div>
                 <div class="col-md-6 inp" >
-                    <input class="txt desc" id="desc_t" placeholder="Description" >
+                    <input class="txt desc" id="desc_t" placeholder="Description" minlength="1">
                 </div>
 
             </div>
@@ -75,7 +76,7 @@
                     <label id="toggle_l"> Domain</label>
                 </div>
                 <div class="col-md-6 text-center inp" id="rollno-div">
-                    <input class="txt " id="rollno" placeholder=" Roll No">
+                    <input class="txt " id="rollno" placeholder=" Roll No" minlength="1">
                 </div>
                 <div class="col-md-6 text-center inp" id="select-div">
                     <select id="domainid" class="txt-select"></select>
@@ -88,7 +89,7 @@
                     <label > Amount</label>
                 </div>
                 <div class="col-md-6 text-center inp" >
-                    <input class="txt" type="number" id="amount" placeholder=" Amount">
+                    <input class="txt" type="number" id="amount" placeholder=" Amount" min="1">
                 </div>
 
             </div>
@@ -98,7 +99,7 @@
                     <label > Deadline</label>
                 </div>
                 <div class="col-md-6 text-center inp">
-                    <input type="date"class="txt" id = "deadline" >
+                    <input type="date"class="txt" id = "deadline">
                 </div>
 
             </div>
@@ -118,7 +119,7 @@
                 </div>
 
             </div>
-
+            </form>
         </div>
 
     </div>
