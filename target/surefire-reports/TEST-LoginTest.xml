@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="2" name="LoginTest" time="24.806" errors="0" skipped="0">
+<testsuite tests="5" failures="2" name="LoginTest" time="31.737" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
@@ -61,11 +61,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="LoginTest" name="LoginTestCase2" time="8.062">
+  <testcase classname="LoginTest" name="LoginTestCase1" time="7.109"/>
+  <testcase classname="LoginTest" name="LoginTestCase2" time="5.838">
     <failure message="expected:&lt;...ademia_war_exploded/[create].html&gt; but was:&lt;...ademia_war_exploded/[login].html&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...ademia_war_exploded/[create].html&gt; but was:&lt;...ademia_war_exploded/[login].html&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:85)
 	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at LoginTest.LoginTestCase2(LoginTest.java:87)
+	at LoginTest.LoginTestCase2(LoginTest.java:98)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,6 +75,8 @@
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
@@ -99,27 +102,25 @@
     <system-out>TYPE text
 http://127.0.0.1:8080/academia_war_exploded/create.html
 </system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 33865
+    <system-err>Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 48228
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 26, 2021 11:08:03 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 26, 2021 2:52:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Nov 26, 2021 11:08:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 26, 2021 2:52:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 96, so returning the closest version found: 95
-Nov 26, 2021 11:08:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 26, 2021 2:52:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 96 of 95
 </system-err>
   </testcase>
-  <testcase classname="LoginTest" name="LoginTestCase3" time="5.835"/>
-  <testcase classname="LoginTest" name="LoginTestCase4" time="5.651">
-    <failure message="expected:&lt;...ademia_war_exploded/[login].html&gt; but was:&lt;...ademia_war_exploded/[create].html&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...ademia_war_exploded/[login].html&gt; but was:&lt;...ademia_war_exploded/[create].html&gt;
+  <testcase classname="LoginTest" name="LoginTestCase3" time="5.028"/>
+  <testcase classname="LoginTest" name="LoginTestCase4" time="5.427"/>
+  <testcase classname="LoginTest" name="LoginTestCase5" time="8.335">
+    <failure message="expected:&lt;...ademia_war_exploded/[create].html&gt; but was:&lt;...ademia_war_exploded/[login].html&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...ademia_war_exploded/[create].html&gt; but was:&lt;...ademia_war_exploded/[login].html&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:85)
 	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at LoginTest.LoginTestCase4(LoginTest.java:166)
+	at LoginTest.LoginTestCase5(LoginTest.java:195)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,6 +129,8 @@ INFO: Found CDP implementation for version 96 of 95
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
@@ -150,20 +153,26 @@ INFO: Found CDP implementation for version 96 of 95
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>TYPE text
-http://127.0.0.1:8080/academia_war_exploded/login.html
-</system-out>
-    <system-err>Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 34577
+    <system-err>Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 47744
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 26, 2021 11:08:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 26, 2021 2:53:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Nov 26, 2021 11:08:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 26, 2021 2:53:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 96, so returning the closest version found: 95
-Nov 26, 2021 11:08:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 26, 2021 2:53:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 96 of 95
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 44652
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 26, 2021 2:53:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 26, 2021 2:53:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 96, so returning the closest version found: 95
+Nov 26, 2021 2:53:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 96 of 95
 </system-err>
   </testcase>
-  <testcase classname="LoginTest" name="LoginTestCase1" time="5.258"/>
 </testsuite>

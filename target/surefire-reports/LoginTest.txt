@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: LoginTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 24.838 sec <<< FAILURE!
-LoginTestCase2(LoginTest)  Time elapsed: 8.062 sec  <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 31.764 sec <<< FAILURE!
+LoginTestCase2(LoginTest)  Time elapsed: 5.838 sec  <<< FAILURE!
 junit.framework.ComparisonFailure: expected:<...ademia_war_exploded/[create].html> but was:<...ademia_war_exploded/[login].html>
 	at junit.framework.Assert.assertEquals(Assert.java:85)
 	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at LoginTest.LoginTestCase2(LoginTest.java:87)
+	at LoginTest.LoginTestCase2(LoginTest.java:98)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -15,6 +15,8 @@ junit.framework.ComparisonFailure: expected:<...ademia_war_exploded/[create].htm
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
@@ -37,11 +39,11 @@ junit.framework.ComparisonFailure: expected:<...ademia_war_exploded/[create].htm
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-LoginTestCase4(LoginTest)  Time elapsed: 5.651 sec  <<< FAILURE!
-junit.framework.ComparisonFailure: expected:<...ademia_war_exploded/[login].html> but was:<...ademia_war_exploded/[create].html>
+LoginTestCase5(LoginTest)  Time elapsed: 8.335 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...ademia_war_exploded/[create].html> but was:<...ademia_war_exploded/[login].html>
 	at junit.framework.Assert.assertEquals(Assert.java:85)
 	at junit.framework.Assert.assertEquals(Assert.java:91)
-	at LoginTest.LoginTestCase4(LoginTest.java:166)
+	at LoginTest.LoginTestCase5(LoginTest.java:195)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,6 +52,8 @@ junit.framework.ComparisonFailure: expected:<...ademia_war_exploded/[login].html
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
