@@ -1,24 +1,21 @@
-document.getElementById("login").addEventListener("click", login);
-document.getElementById("email").addEventListener("keyup",checkValue);
-document.getElementById("password").addEventListener("keyup",checkValue);
-document.getElementById("login").disabled = true;
-document.getElementById("login").style.opacity = 0.6;
-document.getElementById("alert").style.display="None";
+document.getElementById("login").addEventListener("click", checkValue);
+// document.getElementById("email").addEventListener("keyup",checkValue);
+// document.getElementById("password").addEventListener("keyup",checkValue);
+// document.getElementById("login").disabled = true;
+// document.getElementById("login").style.opacity = 0.6;
+// document.getElementById("alert").style.display="None";
+
+// var form = document.getElementById("loginform")
+// form.onsubmit(login())
+var email = document.getElementById("email");
+var password = document.getElementById("password");
 function checkValue()
 {
 
-    email = document.getElementById("email").value;
-    password = document.getElementById("password").value;
-    if(email && password)
-    {
-        document.getElementById("login").disabled = false;
-        document.getElementById("login").style.opacity = 1;
+    if(document.getElementById("loginform").reportValidity()){
+        login();
     }
-    else
-    {
-        document.getElementById("login").disabled = true;
-        document.getElementById("login").style.opacity = 0.6;
-    }
+
 }
 let id = sessionStorage.getItem("id");
 if(id)
@@ -27,11 +24,13 @@ if(id)
 }
 async function login()
 {
+
+
     document.getElementById("login").disabled = true;
     document.getElementById("login").style.opacity = 0.6;
-    email = document.getElementById("email").value;
-    password = document.getElementById("password").value;
-    if(email && password)
+    email_value = email.value;
+    password_value = password.value;
+    if(email_value && password)
     {
         let response = await fetch('api/academia/login', {
         method: 'POST',
@@ -39,10 +38,11 @@ async function login()
             'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify({
-            email: email,
-            password:password,
+            email: email_value,
+            password:password_value,
         })
     });
+
         let result =   response;
         console.log(response);
         if(result["status"]===200){
@@ -56,6 +56,8 @@ async function login()
             document.getElementById("login").style.opacity = 1.0;
             document.getElementById("alert").style.display="block";
         }
+
+
     }
 
 }

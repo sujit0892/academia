@@ -26,7 +26,7 @@ public class Controller {
         Employee e = service.login(emp);
         if(e==null)
             return Response.status(203).build();
-        else if(e.getPassword().equals(emp.getPassword()) && e.getDepartment().equals("Accounts"))
+        else if(e.getPassword().equals(emp.getPassword()))
             return Response.ok().entity(e.getEmployee_id()).build();
         else
             return Response.status(203).build();
