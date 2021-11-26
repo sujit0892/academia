@@ -17,7 +17,7 @@ public class LoginTest {
 //    }
 
     @Test
-    public void TestCase1() {
+    public void LoginTestCase1() {
 
         System.setProperty("webdriver.chrome.driver", "/home/marinex/Test/chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -54,7 +54,7 @@ public class LoginTest {
     }
 
     @Test
-    public void TestCase2() {
+    public void LoginTestCase2() {
         System.setProperty("webdriver.gecko.driver", "/home/marinex/Test/geckodriver");
 //		FirefoxOptions options = new FirefoxOptions();
 //		options.setCapability("marionette", true);
@@ -77,7 +77,7 @@ public class LoginTest {
             username.sendKeys("1234");
             password.sendKeys("123");
             login.click();
-            String actualUrl = "http://127.0.0.1:8080/academia_war_exploded/create.html";
+            String actualUrl = "http://127.0.0.1:8080/academia_war_exploded/login.html";
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(200));
             Thread.sleep(2000);
             String expectedUrl = driver.getCurrentUrl();
@@ -95,7 +95,7 @@ public class LoginTest {
     }
 
     @Test
-    public void TestCase3() {
+    public void LoginTestCase3() {
         System.setProperty("webdriver.gecko.driver", "/home/marinex/Test/geckodriver");
 //		FirefoxOptions options = new FirefoxOptions();
 //		options.setCapability("marionette", true);
@@ -115,10 +115,10 @@ public class LoginTest {
             setAttributeValue(driver,password,"minlength","0");
 
             System.out.println("TYPE "+username.getAttribute("type"));
-            username.sendKeys("placemet<");
+            username.sendKeys("placemet,>");
             password.sendKeys("123");
             login.click();
-            String actualUrl = "http://127.0.0.1:8080/academia_war_exploded/create.html";
+            String actualUrl = "http://127.0.0.1:8080/academia_war_exploded/login.html";
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(200));
             Thread.sleep(2000);
             String expectedUrl = driver.getCurrentUrl();
@@ -134,7 +134,7 @@ public class LoginTest {
     }
 
     @Test
-    public void TestCase4() {
+    public void LoginTestCase4() {
         System.setProperty("webdriver.gecko.driver", "/home/marinex/Test/geckodriver");
 //		FirefoxOptions options = new FirefoxOptions();
 //		options.setCapability("marionette", true);
