@@ -39,11 +39,21 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+
             <h1 id="h-billid">Bill id:20</h1>
             <label id="label">Deadline</label>
-            <input type="txt" placeholder="Enter description" id="update-txt" class="txt">
-            <input type="Number" placeholder="Enter amount" id="amt-txt" class="txt">
-            <input type="date" id="update-calender" class="txt" placeholder="DD/MM/YYYY">
+            <form id="updform">
+            <input type="txt" placeholder="Enter description" id="updatetxt" class="txt" required>
+                </form>
+
+            <form id="amtform">
+            <input type="Number" placeholder="Enter amount" id="amttxt" class="txt" required min="1">
+            </form>
+
+                <form id="deadform">
+            <input type="date" id="updatecalender" class="txt" placeholder="DD/MM/YYYY" required>
+            </form>
+
            <div><button class="bt btn-class" id="updateBill">Update</button><button class="bt btn-class" id="cancelB">Cancel</button>
            </div>
 

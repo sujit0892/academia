@@ -15,13 +15,13 @@ var table_header = "<tr class=\"header\">\n" +
 table.innerHTML=table_header;
 var model = document.getElementById("modalid");
 var span = document.getElementById("cancelB");
-var txt = document.getElementById("update-txt");
-var dat = document.getElementById("update-calender");
+var txt = document.getElementById("updatetxt");
+var dat = document.getElementById("updatecalender");
 
 var label = document.getElementById("label");
 var heading = document.getElementById("h-billid")
 var up = document.getElementById("updateBill");
-var amttxt = document.getElementById("amt-txt");
+var amttxt = document.getElementById("amttxt");
 txt.addEventListener("keyup",checkValue);
 dat.addEventListener("keyup",checkValue);
 dat.addEventListener("change",checkValue);
@@ -53,8 +53,16 @@ function closeModel() {
     document.getElementById("danger").style.display="none";
 }
 
-up.addEventListener("click",updateBill);
+up.addEventListener("click",checkValidity);
 span.addEventListener("click",closeModel)
+
+// function validityCheck()
+// {
+//     if(document.getElementById("formId").reportValidity()){
+//         updateBill();
+//     }
+// }
+
 
 viewBill();
 
@@ -84,8 +92,8 @@ function createTable(data)
     for(let i=0;i<data.length;i++)
     {
         if(!data[i]['status'])
-        val+= "<tr id='"+data[i]['bill']['id']+"'><td>"+data[i]['bill']['id']+"</td><td>"+data[i]['roll_number']+"</td><td class='descField' onclick='updateDesc("+data[i]['bill']['id']+")'>"+data[i]['bill']['description']+"</td><td onclick='updateAmt("+data[i]['bill']['id']+")'>"+
-            data[i]['bill']['amount']+"</td><td>"+new Date(data[i]['bill']['bill_date']).toDateString()+"</td><td onclick='updateDeadline("+data[i]['bill']['id']+")'>"+new Date(data[i]['bill']['deadline']).toDateString()+"</td></tr>" ;
+        val+= "<tr id='"+data[i]['bill']['id']+"'><td>"+data[i]['bill']['id']+"</td><td>"+data[i]['roll_number']+"</td><td class= 'desc' onclick='updateDesc("+data[i]['bill']['id']+")'>"+data[i]['bill']['description']+"</td><td class='amt' onclick='updateAmt("+data[i]['bill']['id']+")'>"+
+            data[i]['bill']['amount']+"</td><td>"+new Date(data[i]['bill']['bill_date']).toDateString()+"</td><td class='dead' onclick='updateDeadline("+data[i]['bill']['id']+")'>"+new Date(data[i]['bill']['deadline']).toDateString()+"</td></tr>" ;
 
 
     }
@@ -148,12 +156,38 @@ function updateDeadline(id)
     label.innerHTML="Deadline";
 }
 
+function checkValidity()
+{
+    desctxt = txt.value;
+    deadlinetxt = dat.value;
+    amt_txt = amttxt.value;
+    if(desctxt)
+    {
+        if(document.getElementById("updform").reportValidity()){
+            updateBill();
+        }
+    }
+    else if(deadlinetxt)
+    {
+        if(document.getElementById("deadform").reportValidity()){
+            updateBill();
+        }
+
+    }
+    else if(amt_txt)
+    {
+        if(document.getElementById("amtform").reportValidity()){
+            updateBill();
+        }
+    }
+}
 async function updateBill()
 {
     up.disabled = true;
     up.style.opacity = 0.6;
     document.getElementById("cancelB").disabled = true;
     document.getElementById("cancelB").style.opacity = 0.6;
+
     desctxt = txt.value;
     deadlinetxt = dat.value;
     amt_txt = amttxt.value;
